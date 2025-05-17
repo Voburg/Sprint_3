@@ -6,9 +6,12 @@ class HomePageLocators: # Главная страница сайта
     account_link = (By.XPATH, "//a[@href = '/account']") # Ссылка на личный кабинет
     constructor_link = (By.XPATH, "//a[@href = '/']") # Ссылка на конструктор
     stellar_burgers_logo = (By.XPATH, "//div[@class='AppHeader_header__logo__2D0X2']") # Ссылка на логотип
-    buns = (By.XPATH, "//span[text() = 'Булки']") # Кнопка "Булки"
-    sauces = (By.XPATH, "//span[text() = 'Соусы']") # Кнопка "Соусы"
-    fillings = (By.XPATH, "//span[text() = 'Начинки']") # Кнопка "Начинки"
+    buns_button = (By.XPATH, "//span[text() = 'Булки']") # Кнопка "Булки"
+    sauces_button = (By.XPATH, "//span[text() = 'Соусы']") # Кнопка "Соусы"
+    fillings_button = (By.XPATH, "//span[text() = 'Начинки']") # Кнопка "Начинки"
+    buns_title = (By.XPATH, "//h2[@class='text text_type_main-medium mb-6 mt-10' and text() = 'Булки']") # Заголовок "Булки"
+    sauces_title = (By.XPATH, "//h2[@class='text text_type_main-medium mb-6 mt-10' and text() = 'Соусы']")  # Заголовок "Соусы"
+    fillings_title = (By.XPATH, "//h2[@class='text text_type_main-medium mb-6 mt-10' and text() = 'Начинки']")  # Заголовок "Начинки"
 
 class LoginPageLocators: # Страница входа на сайт
     login_label = (By.XPATH, "//h2[text() = 'Вход']") # Заголовок "Вход"
