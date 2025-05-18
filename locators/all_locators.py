@@ -27,6 +27,7 @@ class RegistrationPageLocators: # Страница регистрации
     password_input = (By.XPATH, "//label[text() = 'Пароль']/following-sibling::input") # Поле ввода пароля
     register_button = (By.XPATH, "//button[text() = 'Зарегистрироваться']") # Кнопка "Зарегистрироваться"
     login_link = (By.XPATH, "//a[@href = '/login']") # Ссылка "Войти"
+    incorrect_password_error = (By.CLASS_NAME, "input__error") # Сообщение об ошибке "Некорректный пароль"
 
 class AccountPageLocators: # Личный кабинет
     name_input = (By.XPATH, "//label[text() = 'Имя']/following-sibling::input") # Поле ввода имени
